@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project Gantt Chart</title>
+    <style>
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+        th, td {
+            border: 1px solid black;
+            padding: 8px;
+            text-align: center;
+        }
+        th {
+            background-color: #4CAF50;
+            color: white;
+        }
+        .done { background-color: lightgreen; }
+        .progress { background-color: yellow; }
+        .pending { background-color: lightcoral; }
+    </style>
+</head>
+<body>
+    <h2>Project Progress</h2>
+    <table>
+        <tr>
+            <th>Task</th>
+            <th>Status</th>
+            <th>Due Date</th>
+        </tr>
+        <tr class="done">
+            <td>ออกแบบวงจร</td>
+            <td>✅ เสร็จแล้ว</td>
+            <td>2025-02-05</td>
+        </tr>
+        <tr class="progress">
+            <td>เขียนโค้ด</td>
+            <td>⏳ กำลังทำ</td>
+            <td>2025-02-10</td>
+        </tr>
+        <tr class="pending">
+            <td>ทดสอบระบบ</td>
+            <td>❌ ยังไม่เริ่ม</td>
+            <td>2025-02-15</td>
+        </tr>
+    </table>
+</body>
+</html>
+
