@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>แผนที่ห้องเรียน</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        #classroom {
+            width: 100%;
+            height: 100vh;
+            position: relative;
+            background-color: #d3d3d3;
+            overflow: hidden;
+        }
+
+        .wall {
+            position: absolute;
+            background-color: #8b4513;
+        }
+
+        .table {
+            width: 100px;
+            height: 60px;
+            background-color: #deb887;
+            border-radius: 10px;
+        }
+
+        .chair {
+            width: 30px;
+            height: 30px;
+            background-color: #a52a2a;
+            border-radius: 50%;
+            position: absolute;
+        }
+
+        .board {
+            width: 300px;
+            height: 200px;
+            background-color: #000;
+            position: absolute;
+            top: 20px;
+            left: 50%;
+            transform: translateX(-50%);
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 24px;
+            border-radius: 10px;
+        }
+
+        .teacher-desk {
+            width: 120px;
+            height: 80px;
+            background-color: #cd853f;
+            position: absolute;
+            top: 50px;
+            right: 50px;
+            border-radius: 8px;
+        }
+
+        /* จัดเรียงตำแหน่งของโต๊ะและเก้าอี้ */
+        .table1 { top: 150px; left: 50px; }
+        .table2 { top: 150px; left: 200px; }
+        .table3 { top: 150px; left: 350px; }
+
+        .chair1 { top: 215px; left: 50px; }
+        .chair2 { top: 215px; left: 200px; }
+        .chair3 { top: 215px; left: 350px; }
+    </style>
+</head>
+<body>
+
+<div id="classroom">
+    <!-- กำแพงห้อง -->
+    <div class="wall" style="top: 0; left: 0; width: 100%; height: 20px;"></div>
+    <div class="wall" style="bottom: 0; left: 0; width: 100%; height: 20px;"></div>
+    <div class="wall" style="top: 0; left: 0; width: 20px; height: 100%;"></div>
+    <div class="wall" style="top: 0; right: 0; width: 20px; height: 100%;"></div>
+
+    <!-- กระดาน -->
+    <div class="board">
+        กระดาน
+    </div>
+
+    <!-- โต๊ะนักเรียน -->
+    <div class="table table1"></div>
+    <div class="table table2"></div>
+    <div class="table table3"></div>
+
+    <!-- เก้าอี้นักเรียน -->
+    <div class="chair chair1"></div>
+    <div class="chair chair2"></div>
+    <div class="chair chair3"></div>
+
+    <!-- โต๊ะครู -->
+    <div class="teacher-desk"></div>
+</div>
+
+</body>
+</html>
